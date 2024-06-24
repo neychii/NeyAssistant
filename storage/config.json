@@ -1,0 +1,43 @@
+{
+    "client": {
+        "name": "NeyAssistant",
+        "description": "A Discord bot Made with LOVE for ChocoNeychii Community",
+        "colors": {
+            "primary": "#9e6cf0",
+            "success": "#6cf080",
+            "fail": "#f06c6c",
+            "warn": "#f0c26c"
+        },
+        "server": {
+            "id": "1238798281723740260",
+            "url": "https://discord.com/invite/gwwf6kNwAx",
+            "channels": {
+                "welcome": "1238810316515577906",
+                "chatbot": "1238814217008844800"
+            }
+        },
+        "devs": "1161954482347847691"
+    },
+    "system": {
+        "intents": {
+            "intent": [
+                "Guilds",
+                "GuildMessages",
+                "GuildMembers",
+                "GuildPresences",
+                "GuildBans",
+                "GuildVoiceStates",
+                "GuildMessageReactions",
+                "GuildMessageTyping",
+                "MessageContent"
+            ],
+            "partial": [
+                "ThreadMember",
+                "Message",
+                "User",
+                "GuildMember",
+                "Channel"
+            ]
+        }
+    }
+}
