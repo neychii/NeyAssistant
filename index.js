@@ -1,6 +1,5 @@
-require("dotenv").config();
-
 console.clear();
+global.fetch = require('node-fetch');
 
 process.on("unhandledRejection", err => {
     console.error(err);
@@ -10,6 +9,8 @@ process.on("unhandledRejection", err => {
 const { Client, Collection } = require("discord.js");
 const { intentListing } = require("./function/module/intentListing.js");
 const config = require("./storage/config.json");
+
+require("dotenv").config();
 config.token = process.env.token;
 
 const intent = intentListing(config.system.intents);

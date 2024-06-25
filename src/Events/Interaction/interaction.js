@@ -1,7 +1,7 @@
 const slash = require("./@type/slashCommand.js");
 
 module.exports = {
-    name: "Interactions",
+    name: "Interaction Listener",
     type: "interactionCreate",
     execute(client, interaction) {
         slash(client, interaction)
