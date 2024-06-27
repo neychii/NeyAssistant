@@ -4,6 +4,7 @@ global.fetch = require('node-fetch');
 process.on("unhandledRejection", err => {
     console.error(err);
     throw err;
+    console.log("Crash Prevented")
 });
 
 const { Client, Collection } = require("discord.js");
