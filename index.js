@@ -3,7 +3,6 @@ global.fetch = require('node-fetch');
 
 process.on("unhandledRejection", err => {
     console.error(err);
-    throw err;
     console.log("Crash Prevented")
 });
 
@@ -12,6 +11,7 @@ const { intentListing } = require("./function/module/intentListing.js");
 const config = require("./storage/config.json");
 
 require("dotenv").config();
+require("@tensorflow/tfjs-node")
 config.token = process.env.token;
 
 const intent = intentListing(config.system.intents);

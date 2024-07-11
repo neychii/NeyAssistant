@@ -30,15 +30,15 @@ module.exports = {
                 iconURL: client.user.displayAvatarURL({ dynamic: true })
             });
 
-        const msg = interaction.reply({
+        const msg = await interaction.reply({
             embeds: [trainStartEmbed]
         });
 
         var model = await trainAI();
-        model.save("file://" + __dirname + "storage/Model");
+        model.save("file://" + process.cwd() + "/storage/Model");
         session.addModel(model);
 
-        msg.editReply({
+        interaction.followUp({
             embeds: [trainFinishedEmbed]
         });
     }

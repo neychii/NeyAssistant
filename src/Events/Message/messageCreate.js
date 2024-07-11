@@ -5,10 +5,11 @@ module.exports = {
     name: "Message Create Listener",
     type: "messageCreate",
     async execute(client, message) {
+        if (message.author.bot) return;
         await chatbot(client, message);
         
         if (message.channel.id == client.config.server.channels.chatbot) {
-            session.recieve(message)
+            session.recieve(client, message)
         }
     }
 };

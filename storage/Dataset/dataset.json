@@ -1,1 +1,43 @@
-{"greeting":{"patterns":[],"responses":[]},"goodbye":{"patterns":[],"responses":[]},"insult":{"patterns":[],"responses":[]},"compliment":{"patterns":[],"responses":[]}}
+{
+	"greeting": {
+		"patterns": ["hi", "hello", "sup"],
+		"responses": [
+			{ "query": "hi", "response": "Hi!" },
+			{ "query": "hello", "response": "Hewwo :3" },
+			{ "query": "sup", "response": "Whassup? >:3" }
+		]
+	},
+	"goodbye": {
+		"patterns": ["bye", "goodbye", "cya"],
+		"responses": [
+			{ "query": "bhe", "response": "Bye~" },
+			{ "query": "goodbye", "response": "Bye Bye~" },
+			{ "query": "cya", "response": "Cya later :3" }
+		]
+	},
+	"insult": {
+		"patterns": ["fuck you", "you sucks", "suck my dick"],
+		"responses": [
+			{ "query": "fuck you", "response": "Fuck You!" },
+			{ "query": "you sucks", "response": "So do you suckers >:(" },
+			{
+				"query": "suck my dick",
+				"response": "Sorry but there's nothing to suck lmfao"
+			}
+		]
+	},
+	"compliment": {
+		"patterns": ["nice hair", "nice ass", "nice shirt"],
+		"responses": [
+			{
+				"query": "nice hair",
+				"response": "thanks, i just did my hair few minutes ago ^^"
+			},
+			{ "query": "nice ass", "response": "Wha- t-thanks >⸝⸝⸝<" },
+			{
+				"query": "nice shirt",
+				"response": "Thanks i bought it on nearby thrift shops :3"
+			}
+		]
+	}
+}
